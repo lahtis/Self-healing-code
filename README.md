@@ -17,7 +17,7 @@
 
 ## 🌍 Overview
 
-Self‑Healing Localization Layer (SHLL) is a lightweight, dependency‑free Python library that eliminates missing translations forever.
+Self‑Healing Localization Layer (SHL) is a lightweight, dependency‑free Python library that eliminates missing translations forever.
 
 It provides:
 
@@ -207,4 +207,5 @@ Localization that heals itself.**
 localization • i18n • l10n • self-healing • translation • multilingual  
 json • python • developer-tools • automation • templates • cli  
 ai-assisted • language-files • internationalization • localization-engine
+
 
