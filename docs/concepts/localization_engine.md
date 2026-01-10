@@ -57,7 +57,7 @@ This directory must contain:
 }
 ```
 
-## Example Template File (template.json)
+## Example Template File (`template.json`)
 ```json
 {
     "menu": {
@@ -76,7 +76,7 @@ The engine uses this file to validate and synchronize all languages.
 The LocalizationEngine ensures that:
 
 ## 1. Missing language files are created
-If locales/fi.json does not exist, it is automatically generated from template.json.
+If `locales/fi.json` does not exist, it is automatically generated from `template.json`.
 
 ## 2. Missing keys are added
 If a language file lacks a key present in the template, the engine inserts it with an empty value.
@@ -109,3 +109,4 @@ It provides:
 * a clean API for retrieving localized text
 
 This module ensures that localization remains consistent, maintainable, and scalable as your project grows.
+
