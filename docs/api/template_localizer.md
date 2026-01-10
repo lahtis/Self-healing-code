@@ -16,8 +16,10 @@ class TemplateLocalizer:
 ```
 
 ## Parameters
-Name	Type	Description
-engine	LocalizationEngine	Reference to the engine that manages all localization data.
+| Name   | Type                | Description                                           |
+|--------|---------------------|-------------------------------------------------------|
+| engine | LocalizationEngine  | Reference to the engine that manages all localization data. |
+
 
 ---
 
@@ -142,3 +144,4 @@ The TemplateLocalizer ensures that:
 It is a foundational component of SHL’s self‑healing architecture.
 
 ---
+
