@@ -78,4 +78,89 @@ To create a new language:
 engine.ensure_language("de")
 ```
 
+This generates:
+* `locales/lang_de.json`
+* `prompts/de.json` (if prompts are used)
+Both files follow the template structure exactly.
 
+---
+
+# 5. Healing Existing Languages
+If a language file is missing keys, SHL fills them in automatically.
+
+## Before (`fi.json`)
+```json
+{
+    "menu": {
+        "start": "Aloita"
+    }
+}
+```
+## After Healing
+```json
+{
+    "menu": {
+        "start": "Aloita",
+        "exit": ""
+    },
+    "messages": {
+        "welcome": "",
+        "farewell": ""
+    }
+}
+```
+SHL:
+* preserved existing translations
+* added missing keys
+* restored missing sections
+
+---
+
+# 6. Best Practices for Working with Templates
+✔ Keep templates clean and minimal
+Only define keys that all languages must have.
+
+✔ Avoid putting real text in the template
+Values should remain empty:
+
+```json
+"welcome": ""
+```
+
+✔ Add new keys to the template first
+Never edit language files directly to add new keys.
+
+✔ Run engine.sync() after template changes
+This ensures all languages stay aligned.
+
+✔ Use consistent naming
+Prefer dot‑notation friendly structures:
+```json
+menu.start
+menu.exit
+messages.welcome
+```
+
+---
+
+# 7. When to Update the Template
+Update template.json when:
+* adding new UI elements
+* adding new messages or prompts
+* restructuring your localization schema
+* preparing for new features in your app
+SHL will handle the rest.
+
+---
+
+# Summary
+Templates are the foundation of SHL’s self‑healing system.
+They ensure that:
+* all languages share the same structure
+* missing keys are automatically added
+* new languages can be generated instantly
+* existing translations are preserved
+* localization remains predictable and maintainable
+By keeping your template clean and consistent, SHL can manage the rest automatically.
+
+---
