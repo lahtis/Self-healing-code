@@ -1,44 +1,195 @@
-## Self‑Healing Localization ##
-* A new paradigm for open‑source localization.
-* This library eliminates missing translations forever by providing:
-* Automatic creation of missing language files
-* Automatic creation of missing keys
-* Fallback to a base language
-* Optional AI‑powered translation (with explicit user permission)
-* Support for both UI text and AI prompt templates
-* Never write localization files manually again.
+# Self‑Healing Localization Layer
+### Automatic, self‑maintaining localization for any Python project  
+**Author:** Tuomas Lähteenmäki  
+**License:** MIT  
+**Version:** 0.1
 
-'''
+---
+
+## 🌍 Overview
+
+Self‑Healing Localization Layer (SHLL) is a lightweight, dependency‑free Python library that eliminates missing translations forever.
+
+It provides:
+
+- automatic creation of missing language files  
+- automatic creation of missing keys  
+- fallback to a base language (default: English)  
+- unified support for both UI text and AI prompt templates  
+- optional AI‑powered translation (planned for v0.2)  
+
+This library is designed to be **dropped into any project** — from small scripts to full applications — and it will maintain localization files automatically as the project grows.
+
+No more manual JSON editing.  
+No more “missing translation” errors.  
+No more incomplete language packs.
+
+---
+
+## ✨ Key Features
+
+### ✔ Self‑healing UI localization  
+- Missing language files are created automatically  
+- Missing keys are added on the fly  
+- Base language is used as fallback  
+
+### ✔ Self‑healing AI prompt template localization  
+- Missing template files are generated automatically  
+- Base templates are copied as fallback  
+- Missing template keys are added automatically  
+
+### ✔ Unified high‑level engine  
+The `LocalizationEngine` ties everything together:
+
+- ensures languages exist  
+- synchronizes all languages with the base language  
+- provides clean access to UI text and templates  
+
+### ✔ Zero dependencies  
+Pure Python. Works everywhere.
+
+---
+
+## 📦 Installation
+
+(PyPI release planned for v0.2)
+
+Clone the repository:
+
+```bash
+git clone https://github.com/lahtis/Self-healing-localization
+```
+
+Import the engine:
+
+```python
+from shl.engine import LocalizationEngine
+```
+
+---
+
+## 🚀 Quick Start
+
+### 1. Initialize the engine
+
+```python
+from shl.engine import LocalizationEngine
+
+engine = LocalizationEngine(lang_code="fi")  # Finnish
+```
+
+### 2. Retrieve UI text
+
+```python
+title = engine.ui_text("app_title", "My Application")
+```
+
+If `"app_title"` does not exist in `locales/lang_fi.json`, it will be added automatically.
+
+### 3. Retrieve prompt templates
+
+```python
+summary_prompt = engine.template("summary_short", "Summarize the text:")
+```
+
+If `prompts/fi.json` does not exist, it will be created automatically using `prompts/en.json` as the base.
+
+---
+
+## 🧩 Project Structure
+
+```
 self-healing-localization/
 │
-├─ src/
-│ ├─ shl/
-│ │ ├─ __init__.py
-│ │ ├─ localizer.py # Self-healing UI texts
-│ │ ├─ template_localizer.py # Self-healing PromptEngine templates
-│ │ ├─ engine.py # Connecting layer
-│ │ └─ ai_translation.py # (optional) AI translations with permission
-│
-├─ examples/
-│ ├─ basic_ui_localization.py
-│ ├─ prompt_template_localization.py
-│ └─ full_engine_demo.py
-│
-├─ tests/
-│ ├─ test_localizer.py
-│ ├─ test_template_localizer.py
-│ └─ test_engine.py
+├─ shl/
+│   ├─ localizer.py            # UI text localization
+│   ├─ template_localizer.py   # Prompt template localization
+│   ├─ engine.py               # Unified high-level manager
+│   └─ ai_translation.py       # (planned) AI-powered translation
 │
 ├─ locales/
-│ ├─ lang_en.json
-│ └─ lang_fi.json
+│   └─ lang_en.json            # Base UI language
 │
 ├─ prompts/
-│ ├─ en.json
-│ └─ fi.json
+│   └─ en.json                 # Base template language
 │
-├─ README.md
-├─ LICENSE
-├─ pyproject.toml
-└─ setup.cfg
-'''
+└─ README.md
+```
+
+---
+
+## 🔧 API Reference (v0.1)
+
+### Initialize
+
+```python
+engine = LocalizationEngine(lang_code="fi")
+```
+
+### UI text
+
+```python
+engine.ui_text(key, default="")
+```
+
+### Template text
+
+```python
+engine.template(key, default="")
+```
+
+### Ensure language exists
+
+```python
+engine.ensure_language("de")
+```
+
+### Sync all languages with base language
+
+```python
+engine.sync()
+```
+
+---
+
+## 🛠 Roadmap
+
+### v0.2
+- AI‑powered translation (Gemini / Groq / OpenAI)
+- CLI tool (`selfheal sync`, `selfheal translate`)
+- Automatic detection of missing keys across all languages
+
+### v0.3
+- Web‑based Localization Studio
+- Visual diffing of translations
+- Export/import language packs
+
+### v1.0
+- Full ecosystem integrations (Flask, FastAPI, Django, Flet)
+- Community templates
+- Official PyPI release
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.  
+This project aims to become a new standard for open‑source localization — simple, automatic, and self‑maintaining.
+
+---
+
+## 📄 License
+
+MIT License — free for personal and commercial use.
+
+---
+
+## ⭐ Vision
+
+Localization should never be a burden.
+
+With SHLL, any project can become multilingual — automatically, reliably, and without manual maintenance.
+
+**No more missing translations.  
+No more incomplete language packs.  
+Localization that heals itself.**

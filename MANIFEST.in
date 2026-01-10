@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include shl *.py
+recursive-include locales *.json
+recursive-include prompts *.json
