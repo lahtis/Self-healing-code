@@ -6,6 +6,7 @@
 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+[![TestPyPI](https://img.shields.io/badge/TestPyPI-SHL-blue)](https://test.pypi.org/project/SHL/)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Platform](https://img.shields.io/badge/Platform-Cross--platform-lightgrey)
@@ -206,3 +207,4 @@ Localization that heals itself.**
 localization • i18n • l10n • self-healing • translation • multilingual  
 json • python • developer-tools • automation • templates • cli  
 ai-assisted • language-files • internationalization • localization-engine
+
