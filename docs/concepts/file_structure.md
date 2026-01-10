@@ -97,7 +97,7 @@ MIT-license for the project.
 
 ## Summary
 
-The SHLL repository is structured to be:
+The SHL repository is structured to be:
 
 - **clear** — easy to navigate  
 - **modular** — core code, docs, and examples separated  
@@ -107,3 +107,4 @@ The SHLL repository is structured to be:
 This structure supports both contributors and users, ensuring long‑term project health.
 
 ---
+
