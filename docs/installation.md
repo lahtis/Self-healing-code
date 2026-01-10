@@ -6,6 +6,7 @@
 git clone https://github.com/lahtis/Self-healing-localization
 ```
 
+
 Requirements
 Python 3.8 or newer
 
@@ -21,7 +22,6 @@ from shl.engine import LocalizationEngine
 
 # 📄 **docs/quickstart.md**
 
-```markdown
 # Quick Start
 
 This guide shows how to get started with SHLL in under a minute.
@@ -63,5 +63,6 @@ SHLL is built around three ideas:
 3. **Automatic synchronization**
 
 The system ensures that your localization files are always complete, without manual editing.
+
 
 
