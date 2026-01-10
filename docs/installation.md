@@ -1,24 +1,54 @@
 # Installation
 
-## Clone the Repository
-
-```bash
-git clone https://github.com/lahtis/Self-healing-localization
-```
-
-
-Requirements
-Python 3.8 or newer
-
-No external dependencies
-
-Importing the Engine
-```bash
-from shl.engine import LocalizationEngine
-```
-
+The Self‑Healing Localization Layer (SHLL) can be installed using pip.  
+The package is currently available on TestPyPI for early testing.
 
 ---
+
+## Installing from TestPyPI
+
+To install the latest test release:
+
+```bash
+pip install -i https://test.pypi.org/simple/ self-healing-localization
+```
+
+To install a specific version:
+```bash
+pip install -i https://test.pypi.org/simple/ self-healing-localization==0.1.1
+```
+
+# Installing from PyPI (coming soon)
+Once the first stable release is published, installation will be as simple as:
+```bash
+pip install self-healing-localization
+```
+
+Requirements
+* Python 3.10 or newer
+* No external dependencies
+* Works on Windows, Linux, and macOS
+
+Verifying the installation
+After installation, you can verify that SHLL works by importing the engine:
+```bash
+from shl.engine import LocalizationEngine
+
+engine = LocalizationEngine()
+print("SHLL is installed and working.")
+```
+---
+
+# Upgrading to the latest version
+```bash
+pip install --upgrade self-healing-localization
+```
+---
+
+
+
+
+
 
 # 📄 **docs/quickstart.md**
 
@@ -63,6 +93,7 @@ SHLL is built around three ideas:
 3. **Automatic synchronization**
 
 The system ensures that your localization files are always complete, without manual editing.
+
 
 
 
