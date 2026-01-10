@@ -91,7 +91,7 @@ Modern build configuration for packaging and distribution.
 Overview of the project, installation, and quickstart instructions.
 
 ### `LICENSE`
-Open‑source license for the project.
+MIT-license for the project.
 
 ---
 
@@ -107,4 +107,3 @@ The SHLL repository is structured to be:
 This structure supports both contributors and users, ensuring long‑term project health.
 
 ---
-
