@@ -1,15 +1,15 @@
-# Self‑Healing Localization Layer (SHLL)
+# Self‑Healing Localization Layer (SHL)
 
 Welcome to the official documentation for the **Self‑Healing Localization Layer**, a lightweight and dependency‑free localization system for Python applications.
 
-SHLL is designed to eliminate common localization problems by automatically:
+SHL is designed to eliminate common localization problems by automatically:
 
 - creating missing language files
 - adding missing translation keys
 - synchronizing all languages with a shared base template
 - preventing translation drift as your project grows
 
-This makes SHLL ideal for games, tools, and applications where clarity, maintainability, and long‑term consistency matter.
+This makes SHL ideal for games, tools, and applications where clarity, maintainability, and long‑term consistency matter.
 
 ---
 
@@ -34,13 +34,13 @@ This makes SHLL ideal for games, tools, and applications where clarity, maintain
 This documentation includes:
 
 - **Installation**  
-  How to install SHLL from TestPyPI or PyPI.
+  How to install SHL from TestPyPI or PyPI.
 
 - **Concepts**  
   Core ideas behind the architecture and design philosophy.
 
 - **Guides**  
-  Step‑by‑step instructions for integrating SHLL into your project.
+  Step‑by‑step instructions for integrating SHL into your project.
 
 - **API Reference**  
   Detailed documentation for `LocalizationEngine`, `Localizer`, `TemplateLocalizer`, and other modules.
@@ -76,5 +76,6 @@ Feedback, ideas, and contributions are warmly welcome.
 
 Repository:
 https://github.com/lahtis/Self-healing-localization
+
 
 
