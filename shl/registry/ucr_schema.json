@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SHL Universal Component Registry Schema",
+  "type": "object",
+
+  "required": ["components"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "project": { "type": "string" },
+        "description": { "type": "string" },
+        "default_language": { "type": "string" },
+        "supported_languages": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "components": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9_]+$": {
+          "type": "object",
+          "required": ["type", "text_keys", "framework_map"],
+          "properties": {
+            "type": { "type": "string" },
+            "role": { "type": "string" },
+
+            "text_keys": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9_]+$": { "type": "string" }
+              }
+            },
+
+            "data_binding": {
+              "type": "object",
+              "properties": {
+                "model": { "type": "string" },
+                "field": { "type": "string" }
+              }
+            },
+
+            "framework_map": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9_]+$": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

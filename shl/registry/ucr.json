@@ -1,0 +1,79 @@
+{
+  "$schema_version": "0.1",
+  "meta": {
+    "project": "SHL Demo",
+    "description": "Universal Component Registry for demo form",
+    "default_language": "fi",
+    "supported_languages": ["fi", "en"]
+  },
+
+  "components": {
+    "user_name": {
+      "type": "input",
+      "role": "user_identifier",
+
+      "text_keys": {
+        "label": "user_name.label",
+        "placeholder": "user_name.placeholder",
+        "tooltip": "user_name.tooltip"
+      },
+
+      "data_binding": {
+        "model": "User",
+        "field": "name"
+      },
+
+      "framework_map": {
+        "Playwright": {
+          "selector_type": "css",
+          "selector": "#user-name-input"
+        },
+        "Selenium": {
+          "by": "id",
+          "value": "user-name-input"
+        },
+        "PyQt": {
+          "class": "QLineEdit",
+          "object_name": "txtUserName"
+        },
+        "Flet": {
+          "class": "TextField",
+          "id": "user_name"
+        }
+      }
+    },
+
+    "action_button": {
+      "type": "button",
+      "role": "submit",
+
+      "text_keys": {
+        "label": "action_button.label",
+        "tooltip": "action_button.tooltip"
+      },
+
+      "actions": {
+        "on_click": "submit_form"
+      },
+
+      "framework_map": {
+        "Playwright": {
+          "selector_type": "role",
+          "selector": "button[name='Submit']"
+        },
+        "Selenium": {
+          "by": "css_selector",
+          "value": "button[data-testid='submit']"
+        },
+        "PyQt": {
+          "class": "QPushButton",
+          "object_name": "btnSubmit"
+        },
+        "Flet": {
+          "class": "ElevatedButton",
+          "id": "action_button"
+        }
+      }
+    }
+  }
+}

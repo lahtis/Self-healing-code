@@ -1,0 +1,125 @@
+{
+  "$schema": "https://shl.dev/schema/ui/v1",
+  "version": "1.0.0",
+  "components": [
+    {
+      "id": "input_field",
+      "shl_type": "TEXT_INPUT",
+      "text_keys": {
+        "label": "input_field.label",
+        "placeholder": "input_field.placeholder",
+        "error_required": "input_field.error.required"
+      },
+      "implementations": {
+        "Tkinter": {
+          "class": "Entry",
+          "supports_placeholder": false,
+          "supports_label": false
+        },
+        "PyQt6": {
+          "class": "QLineEdit",
+          "supports_placeholder": true,
+          "supports_label": false
+        },
+        "Flet": {
+          "class": "TextField",
+          "supports_placeholder": true,
+          "supports_label": true
+        },
+        "Streamlit": {
+          "class": "st.text_input",
+          "supports_placeholder": true,
+          "supports_label": true
+        }
+      },
+      "metadata": {
+        "supports_language_manager": true,
+        "middleman_required": false,
+        "category": "input"
+      }
+    },
+
+    {
+      "id": "user_name",
+      "shl_type": "TEXT_INPUT",
+      "text_keys": {
+        "label": "user_name.label",
+        "placeholder": "user_name.placeholder"
+      },
+      "implementations": {
+        "Tkinter": { "class": "Entry" },
+        "PyQt6": { "class": "QLineEdit" },
+        "Flet": { "class": "TextField" }
+      },
+      "metadata": {
+        "supports_language_manager": true,
+        "middleman_required": true,
+        "category": "input"
+      }
+    },
+
+    {
+      "id": "action_button",
+      "shl_type": "BUTTON",
+      "text_keys": {
+        "label": "action_button.label",
+        "tooltip": "action_button.tooltip"
+      },
+      "implementations": {
+        "Tkinter": {
+          "class": "Button",
+          "supports_tooltip": false
+        },
+        "PyQt6": {
+          "class": "QPushButton",
+          "supports_tooltip": true
+        },
+        "Flet": {
+          "class": "ElevatedButton",
+          "supports_tooltip": false
+        },
+        "Streamlit": {
+          "class": "st.button",
+          "supports_tooltip": false
+        }
+      },
+      "metadata": {
+        "supports_language_manager": true,
+        "middleman_required": false,
+        "category": "action"
+      }
+    },
+
+    {
+      "id": "dropdown_menu",
+      "shl_type": "DROPDOWN",
+      "text_keys": {
+        "label": "dropdown_menu.label",
+        "placeholder": "dropdown_menu.placeholder"
+      },
+      "implementations": {
+        "Tkinter": {
+          "class": "OptionMenu",
+          "supports_placeholder": false
+        },
+        "PyQt6": {
+          "class": "QComboBox",
+          "supports_placeholder": false
+        },
+        "Flet": {
+          "class": "Dropdown",
+          "supports_placeholder": true
+        },
+        "Streamlit": {
+          "class": "st.selectbox",
+          "supports_placeholder": false
+        }
+      },
+      "metadata": {
+        "supports_language_manager": true,
+        "middleman_required": true,
+        "category": "selection"
+      }
+    }
+  ]
+}

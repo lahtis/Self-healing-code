@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SHL UI Blueprint Schema",
+  "type": "object",
+
+  "required": ["components"],
+
+  "properties": {
+    "components": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9_]+$": {
+          "type": "object",
+          "required": ["type", "healer_key", "user_key", "framework_map"],
+
+          "properties": {
+            "type": { "type": "string" },
+            "healer_key": { "type": "string" },
+            "user_key": { "type": "string" },
+
+            "text_keys": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9_]+$": { "type": "string" }
+              }
+            },
+
+            "framework_map": {
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9_]+$": {
+                  "type": "object"
+                }
+              }
+            },
+
+            "data_binding": {
+              "type": "object",
+              "properties": {
+                "model": { "type": "string" },
+                "field": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
