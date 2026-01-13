@@ -3,7 +3,8 @@
 **Author:** Tuomas Lähteenmäki  
 **License:** MIT  
 **Version:** 0.1.1
-**DEV** 0.2.0
+
+**DEV:** 0.2.0
 
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
@@ -208,3 +209,4 @@ Localization that heals itself.**
 #localization • #i18n • #l10n • #self-healing • #translation • #multilingual  
 #json • #python • #developer-tools • #automation • #templates • #cli  
 #ai-assisted • #language-files • #internationalization • #localization-engine
+
