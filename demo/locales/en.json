@@ -1,0 +1,10 @@
+{
+  "action_button": {
+    "label": "Submit",
+    "tooltip": "Submit the form"
+  },
+  "user_name": {
+    "label": "Name",
+    "placeholder": "Enter your name"
+  }
+}

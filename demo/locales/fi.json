@@ -1,0 +1,10 @@
+{
+  "action_button": {
+    "label": "Lähetä",
+    "tooltip": "Lähetä lomake"
+  },
+  "user_name": {
+    "label": "Nimi",
+    "placeholder": "Anna nimesi"
+  }
+}
