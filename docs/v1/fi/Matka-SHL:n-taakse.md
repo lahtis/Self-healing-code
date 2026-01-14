@@ -54,7 +54,29 @@ Mökin rauhassa projekti muuttui:
 
 **skriptistä → kirjastoksi → arkkitehtuuriksi → filosofiaksi.**
 
-## 6. Lopputulos: SHL
+## 6. Jeevesin uusi aikakausi – modulaarisuus, tietokanta ja turvallisuus
+
+Ajan myötä Jeeves kehittyi merkittävästi alkuperäisestä RSS‑daemonista.  
+Uusi versio on rakennettu modulaariseksi ja se käyttää tietokantaa pohjarakenteenaan.  
+Tavoitteena oli tehdä Jeevesistä laajennettava, vakaa ja tulevaisuuden projekteihin sopiva alusta.
+
+Kehitys ei kuitenkaan ollut suoraviivaista.  
+Uusi Jeeves yritti aluksi integroida AI‑työkalut liian helposti ja liian suoraan, mikä johti nopeasti ongelmiin.  
+Tämän seurauksena projektiin jouduttiin rakentamaan lähes “NASAn veroinen” kolmikerroksinen turvakerros, joka:
+
+- eristää AI‑kutsut  
+- validoi syötteet ja vastaukset  
+- suojaa järjestelmää vääriltä tai vaarallisilta toiminnoilta  
+- varmistaa, että Jeeves pysyy vakaana ja ennustettavana
+
+Tämän vuoksi uutta Jeeves‑versiota ei ole vielä julkaistu omaan repoonsa.  
+Se on edelleen kehitysvaiheessa, mutta sen arkkitehtuuri toimii tärkeänä osana SHL:n taustaa:  
+se osoittaa, miksi semanttinen välikerros, adapterit ja turvallinen orkestraatio ovat niin tärkeitä.
+
+Uusi Jeeves toimii nyt eräänlaisena testialustana, jossa SHL:n periaatteita voidaan kokeilla käytännössä ennen kuin ne päätyvät osaksi varsinaista frameworkia.
+
+
+## 7. Lopputulos: SHL
 SHL ei ole enää pelkkä lokalisointityökalu.  
 Se on:
 
