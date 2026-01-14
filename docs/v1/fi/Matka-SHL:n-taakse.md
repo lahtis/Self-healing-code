@@ -1,7 +1,7 @@
 # SHL – Syntytarina
 
 ## 1. Jeeves – ensimmäinen kipinä
-SHL FRAMEworkin juuret ovat Jeevesissä, pienessä RSS‑daemonissa, jonka käyttöliittymät oli tarkoitus rakentaa erikseen. Jeeves herätti yhden keskeisen kysymyksen:
+SHL juuret ovat Jeevesissä, pienessä RSS‑daemonissa, jonka käyttöliittymät oli tarkoitus rakentaa erikseen. Jeeves herätti yhden keskeisen kysymyksen:
 
 **Voisiko järjestelmä ymmärtää käyttäjän tarkoituksen, ei vain koodia?**
 
