@@ -1,93 +1,85 @@
-# Osa 2 – Arkkitehtuurin synty (TestPyPI, modulaarisuus, healing‑sykli)
+ # Osa 3 – Siirtymävaihe: Tekniikasta filosofiaan
 
-Ensimmäisten Python‑kokeilujen jälkeen projekti alkoi kasvaa nopeasti.  
-Pienistä apuskripteistä syntyi tarve rakentaa jotakin suurempaa:  
-järjestelmä, joka ei vain lukenut kielitiedostoja, vaan ymmärsi UI:n semanttisen rakenteen.
+Kun Jeevesin uusi aikakausi oli käynnissä ja tekniset peruspilarit olivat paikoillaan, projektissa tapahtui hiljainen mutta ratkaiseva muutos.  
+Tähän asti työ oli ollut konkreettista: moduuleja, adaptereita, healing‑sykliä, semanttisia rakenteita.  
+Mutta jossain vaiheessa tekninen tekeminen alkoi tuottaa jotain enemmän.
 
-Tämä vaihe oli SHL frameworkin todellinen synty.
+Tämä osa kuvaa sen siirtymän — hetken, jolloin SHL ei ollut enää vain koodia, vaan ajattelutapa.
 
-## Localizerista modulaariseksi paketiksi
+---
 
-Kun `Localizer` oli osoittautunut hyödylliseksi Digital Guestbookissa ja Jeevesissä, syntyi ajatus:
+## Tekniikka oli valmis, mutta tarina ei
 
-**tämä pitäisi irrottaa omaksi paketiksi.**
+- modulaarinen arkkitehtuuri  
+- healing‑syklin laajentuminen  
+- semanttinen rekisteri  
+- turvallinen AI‑rajapinta  
+- adapterimalli  
 
-Tämä johti ensimmäiseen TestPyPI‑julkaisuun:
+Mutta vaikka tekninen rakenne oli syntynyt, jotain puuttui:
 
-- **0.0.1** – ensimmäinen raakaversio, joka ei toiminut  
-- **0.0.2** – korjattu versio, joka toimi ja todisti, että pakettimalli oli oikea suunta  
+- **miksi** tämä kaikki oli olemassa  
+- **mitä** SHL oikeastaan edusti  
+- **mihin** suuntaan sen pitäisi kasvaa  
+- **miten** siitä kerrotaan muille  
 
-TestPyPI‑julkaisut pakottivat miettimään:
+Tekniikka oli valmis, mutta identiteetti ei.
 
-- tiedostorakennetta  
-- modulaarisuutta  
-- riippuvuuksia  
-- julkaisuprosessia  
-- versionhallintaa  
+---
 
-Tämä oli ensimmäinen hetki, jolloin projekti alkoi muistuttaa oikeaa kirjastoa.
+## Jeevesin rooli muutoksessa
 
-## Modulaarisuuden synty
+Jeeves toimi tässä vaiheessa kuin laboratorio, mutta myös peili.  
+Sen kautta näkyi:
 
-Kun Localizer irrotettiin omaksi paketiksi, syntyi tarve selkeälle rakenteelle:
+- mikä toimi  
+- mikä ei toiminut  
+- mikä oli olennaista  
+- mikä oli vain toteutustekniikkaa  
 
-- kielikerros  
-- konfiguraatiokerros  
-- tiedostokerros  
-- UI‑adapterit  
-- semanttinen logiikka  
+Jeevesin kautta syntyi oivallus:
 
-Tämä johti ajatukseen, että UI:n ja lokalisoinnin ei pitäisi olla sidottuja toisiinsa.  
-Sen sijaan niiden pitäisi kommunikoida **semanttisen välikerroksen** kautta.
+> “Tämä ei ole enää Jeeves‑projekti.  
+> Tämä on jotain suurempaa.”
 
-Tämä oli SHL:n ensimmäinen arkkitehtoninen periaate.
+---
 
-## Healing‑syklin alku
+## Tarve nimetä, jäsentää ja kertoa
 
-Kun Localizer alkoi automaattisesti:
+Kun järjestelmä alkoi kasvaa yli yksittäisen sovelluksen, syntyi tarve:
 
-- luoda puuttuvia avaimia  
-- täydentää oletusarvoja  
-- päivittää JSON‑tiedostoja  
+- antaa sille nimi  
+- määritellä sen periaatteet  
+- kuvata sen arkkitehtuuri  
+- kertoa sen syntytarina  
+- tehdä siitä ymmärrettävä muille  
 
-syntyi ajatus:
+Tämä oli hetki, jolloin SHL framework alkoi hahmottua kokonaisuutena.
 
-**entä jos koko UI voisi parantua samalla tavalla?**
+---
 
-Tästä syntyi healing‑syklin ensimmäinen versio:
+## Filosofian esiin nouseminen
 
-1. **Havaitaan puuttuva tieto**  
-2. **Luodaan oletus**  
-3. **Tallennetaan se**  
-4. **Käytetään sitä heti**  
+Tekninen työ oli tuottanut rakenteen, mutta rakenteen takaa alkoi näkyä filosofia:
 
-Tämä oli aluksi vain lokalisointia varten, mutta pian kävi selväksi, että sama logiikka voisi toimia:
+- semantiikka ennen UI:ta  
+- healing ennen virheilmoituksia  
+- turvallisuus ennen automaatiota  
+- rakenne ennen koodia  
+- ekosysteemi ennen yksittäistä projektia  
 
-- UI‑komponenteille  
-- semanttisille avaimille  
-- rakenteille  
-- adaptereille  
-- jopa kokonaisille näkymille  
+Nämä eivät olleet enää vain teknisiä ratkaisuja.  
+Ne olivat periaatteita.
 
-Healing‑syklistä tuli SHL:n ydinajatus.
+---
 
-## Jeevesin vaikutus arkkitehtuuriin
+## Siirtymä kohti identiteettiä
 
-Kun Localizeria yritettiin liittää Jeevesiin, tuli esiin uusia tarpeita:
+Tämä kuvaa hetken, jolloin projekti:
 
-- modulaarisuus  
-- tietokantakerros  
-- turvallinen AI‑integraatio  
-- kolmitasoinen validointi  
-- erillinen semanttinen rekisteri  
+- siirtyi koodista konseptiin  
+- siirtyi toteutuksesta tarinaan  
+- siirtyi yksittäisestä sovelluksesta frameworkiin  
+- siirtyi teknisestä työstä filosofiseen ymmärrykseen  
 
-Jeevesin uusi versio toimi käytännön testialustana, jossa SHL:n ideat joko toimivat tai kaatuivat.  
-Moni SHL:n arkkitehtuurinen ratkaisu syntyi juuri näistä kokeiluista.
-
-Tässä vaiheessa projekti ei ollut enää skripti eikä kirjasto.  
-Se oli:
-
-- modulaarinen  
-- semanttinen  
-- itseparantuva  
-- framework‑agnostinen  
+---
