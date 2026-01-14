@@ -1,4 +1,4 @@
-## 0. Ennen Pythonia – CLI‑projekti ja vanhan koulukunnan ajattelu
+## 0. Aika Ennen Pythonia – CLI‑projekti ja vanhan koulukunnan ajattelu
 
 Ennen kuin SHL kehitys alkoi Pythonilla, taustalla oli vielä varhaisempi projekti.  
 Se oli täysin komentorivipohjainen järjestelmä, ilman käyttöliittymää, rakennettu samalla tavalla kuin 20–25 vuotta sitten tehdyissä PHP‑projekteissa.
