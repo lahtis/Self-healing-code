@@ -1,4 +1,4 @@
-# Osa 4 – SHL frameEworkin nimeäminen, dokumentointi ja identiteetin synty
+# Osa 5 – SHL frameEworkin nimeäminen, dokumentointi ja identiteetin synty
 
 Kun arkkitehtuuri oli muotoutunut, healing‑sykli kypsynyt ja Jeeves toiminut testialustana, projekti oli saavuttanut pisteen, jossa se ei ollut enää kokoelma kokeiluja.  
 Se tarvitsi nimen, identiteetin ja dokumentaation.  
