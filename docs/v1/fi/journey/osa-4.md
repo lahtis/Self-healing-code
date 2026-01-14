@@ -1,4 +1,4 @@
-# Osa 3 – Jeevesin uusi aikakausi, turvallisuuskerrokset ja SHL:n lopullinen muoto
+# Osa 4 – Jeevesin uusi aikakausi, turvallisuuskerrokset ja SHL:n lopullinen muoto
 
 Kun Localizer oli muuttunut paketiksi ja healing‑sykli oli saanut ensimmäisen muotonsa, projekti tarvitsi todellisen testialustan.  
 Tähän rooliin nousi Jeeves – alun perin yksinkertainen RSS‑daemon, mutta nyt täysin uuden kehitysvaiheen keskipiste.
