@@ -1,6 +1,6 @@
 # Osa 8 – SHL:n kerrosmalli visuaalisena kaaviona
 
-SHL FRAMEwork rakentuu useista kerroksista, joilla jokaisella on selkeä vastuu.  
+SHL frameEwork rakentuu useista kerroksista, joilla jokaisella on selkeä vastuu.  
 Tämä kaavio esittää koko arkkitehtuurin yhdellä silmäyksellä – ylhäältä (UI) alas (ydinlogiikkaan).
 
 ```text
