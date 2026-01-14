@@ -4,7 +4,7 @@ SHL-järjestelmä on tietomalli-ohjattu (Data-driven). Tämä tarkoittaa, että 
 
 ## 1. Skeeman perusrakenne
 
-Skeematiedosto sijaitsee yleensä polussa `shl/ui/schema/v1/ui_schema.json`. Sen ylin taso sisältää versiotiedot ja listan komponenteista.
+Skeematiedosto sijaitsee polussa `[shl/ui/schema/v1/ui_schema.json]`. Sen ylin taso sisältää versiotiedot ja listan komponenteista.
 
 ```json
 {
