@@ -1,5 +1,23 @@
 # SHL – Syntytarina
 
+# 0. Matka SHL:n taakse – Sisällysluettelo
+
+Tämä tarina kuvaa SHL:n syntyä, kehitystä ja filosofiaa.  
+Osat etenevät kronologisesti ja muodostavat yhtenäisen kokonaisuuden.
+
+- [Osa 0 – Ennen Pythonia](journey/osa-0.md)
+- [Osa 1 – Ensimmäiset Python-kokeilut](journey/osa-1.md)
+- [Osa 2 – Arkkitehtuurin synty ja Localizerin irrottaminen](journey/osa-2.md)
+- [Osa 3 – Jeevesin uusi aikakausi ja turvallisuuskerrokset](journey/osa-3.md)
+- [Osa 4 – Siirtymävaihe: Tekniikasta filosofiaan](journey/osa-4.md)
+- [Osa 5 – SHL:n nimeäminen ja identiteetin synty](journey/osa-5.md)
+- [Osa 6 – Tulevaisuuden visio](journey/osa-6.md)
+- [Osa 7 – SHL:n periaatteet tiivistettynä](journey/osa-7.md)
+- [Osa 8 – Kerrosmalli visuaalisena kaaviona](journey/osa-8.md)
+- [Osa 9 – Kerrosmallin selitys esimerkin kautta](journey/osa-9.md)
+
+---
+
 ## 1. Jeeves – ensimmäinen kipinä
 SHL juuret ovat Jeevesissä, pienessä RSS‑daemonissa, jonka käyttöliittymät oli tarkoitus rakentaa erikseen. Jeeves herätti yhden keskeisen kysymyksen:
 
