@@ -43,7 +43,9 @@ instead of the earlier file‑based localization engine.
 ---
 
 ## [0.1.1] - 2026-01-10
-### Added
+### Notes
+This version focuses on stabilizing the original implementation before the architectural overhaul in 0.2.0.
+
 - Initial release of the **Self‑Healing Localization Layer (SHLL)**.
 - `localizer.py`:  
   - Automatic creation of missing UI language files.  
@@ -84,3 +86,4 @@ instead of the earlier file‑based localization engine.
 - The initial release version. The structure existed, but the system was still clearly incomplete and partially broken.
   
 ---
+
