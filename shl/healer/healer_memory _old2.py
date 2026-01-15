@@ -1,5 +1,20 @@
-from dataclasses import dataclass, field
+"""
+File: healer_memory _old2.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Early SHL memory prototype: a simple counter tracking text, type, and context
+successes/failures and the history of selected selectors. Served as the foundation
+for the current heuristic and learning‑based healer memory system. Preserved for historical reference.
 
+SHL:n varhainen muistiprototyyppi: yksinkertainen laskuri, joka tallentaa tekstin,
+tyypin ja kontekstin onnistumis‑ ja epäonnistumismäärät sekä valittujen selectorien historian.
+Toimi pohjana nykyiselle heuristiikka‑ ja oppimispohjaiselle healer‑muistijärjestelmälle. 
+Säilytetään historiallisista syistä.
+"""
+
+from dataclasses import dataclass, field
 
 @dataclass
 class HealerMemory:
@@ -30,3 +45,4 @@ class HealerMemory:
         total = s + f
         # 0.5 = neutraali alkuarvo
         return s / total if total > 0 else 0.5
+
