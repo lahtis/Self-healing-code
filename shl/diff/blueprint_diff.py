@@ -1,3 +1,15 @@
+"""
+File: blueprint_diff.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Defines SHL blueprint changes: the type, reason, and old–new values of a single
+component field modification for diff analysis.
+
+Määrittelee SHL‑blueprinttien muutokset: yksittäisen komponentin kenttämuutoksen 
+tyypin, syyn ja vanha–uusi‑arvot vertailua varten.
+"""
 from dataclasses import dataclass
 from typing import Any
 
@@ -38,3 +50,4 @@ class BlueprintChange:
             ChangeReason.NORMALIZATION,
             ChangeReason.UNKNOWN,
         ), f"Invalid reason: {self.reason}"
+
