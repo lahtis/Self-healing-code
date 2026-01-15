@@ -4,7 +4,7 @@ Author: Tuomas Lähteenmäki
 Version: 0.1
 License: MIT
 Description: 
-“Tkinter UI adapter for SHL: creates Tkinter widgets from SHLComponent definitions, 
+Tkinter UI adapter for SHL: creates Tkinter widgets from SHLComponent definitions, 
 applies localized texts, and refreshes them on language change.
 
 Tkinter‑UI‑adapteri SHL:lle: luo Tkinter‑widgetit SHLComponent‑määrittelyistä, 
@@ -71,5 +71,6 @@ class TkinterAdapter(UIAdapter):
         Reapply all localized texts to the widget.
         """
         self.apply_localization(widget, component)
+
 
 
