@@ -1,3 +1,19 @@
+"""
+File: blueprint_to_ucr.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Conversion module that transforms a human‑friendly UI blueprint into SHL’s internal UCR registry format. 
+Reads the blueprint JSON, constructs the UCR structure, transfers component types, text_keys, 
+framework_map definitions, data_binding information, and maps healer_key and user_key into their 
+appropriate UCR fields, then writes the result to a UCR file.
+
+Muunnosmoduuli, joka kääntää ihmisläheisen UI‑blueprintin SHL:n sisäiseen UCR‑rekisteriformaattiin. 
+Lukee blueprintin JSON‑muodossa, rakentaa UCR‑rakenteen, siirtää komponenttien tyypit, text_keys‑arvot, 
+framework_map‑määritykset, data_binding‑tiedot sekä healer_key‑ ja user_key‑kentät oikeisiin paikkoihin, 
+ja tallentaa tuloksen UCR‑tiedostoksi.
+"""
 import json
 from pathlib import Path
 
@@ -48,3 +64,4 @@ def blueprint_to_ucr(blueprint_path: str | Path, output_path: str | Path):
         json.dump(ucr, f, indent=2, ensure_ascii=False)
 
     return output_path
+
