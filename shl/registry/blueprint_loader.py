@@ -1,3 +1,16 @@
+"""
+File: blueprint_loader.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+UI blueprint loading module: reads a JSON‑based blueprint file and constructs SHLComponent objects, 
+including text_keys, healer_key, user_key, framework‑specific mappings, and optional data_binding definitions
+
+UI‑blueprinttien latausmoduuli: lukee JSON‑muotoisen blueprint‑tiedoston ja rakentaa siitä SHLComponent‑oliot, 
+mukaan lukien text_keys‑arvot, healer_key‑tunnisteen, user_key‑merkityksen, 
+framework‑kohtaiset mapit sekä mahdollisen data_binding‑määrityksen.
+"""
 import json
 from pathlib import Path
 from shl.ui.components.SHLComponent import SHLComponent
@@ -50,3 +63,4 @@ def load_blueprint(path: str | Path):
         components.append(component)
 
     return components
+
