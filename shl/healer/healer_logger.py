@@ -1,3 +1,15 @@
+"""
+File: healer_logger.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Logging component for the healing process: receives HealerLogEntry records, 
+prints them for debugging, and optionally writes them to a JSON log file.
+
+Healing‑prosessin lokituskomponentti: vastaanottaa HealerLogEntry‑merkinnät, 
+tulostaa ne debug‑käyttöön ja tallentaa ne valinnaiseen JSON‑lokitiedostoon.
+"""
 import json
 from pathlib import Path
 from dataclasses import asdict
@@ -28,3 +40,4 @@ class HealerLogger:
         data = asdict(entry)
         with open(self.logfile, "a", encoding="utf-8") as f:
             f.write(json.dumps(data, ensure_ascii=False) + "\n")
+
