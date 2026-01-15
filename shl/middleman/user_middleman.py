@@ -7,7 +7,7 @@ Description:
 Example implementation of the middleman layer: adapts a User object to SHL components (TEXT_INPUT and DROPDOWN), 
 converts User data into UI‑friendly values, and maps UI values back into Python structures for form handling.
 
-Esimerkkitoteutus middleman‑kerroksesta: sovittaa User‑olion SHL‑komponentteihin (TEXT_INPUT ja DROPDOWN),
+Esimerkki toteutus middleman‑kerroksesta: sovittaa User‑olion SHL‑komponentteihin (TEXT_INPUT ja DROPDOWN),
 muuntaa User‑datan UI‑arvoiksi ja palauttaa UI‑arvot takaisin Python‑rakenteiksi lomakkeiden käsittelyä varten.
 """
 from shl.middleman.base import Middleman
@@ -58,4 +58,5 @@ class UserMiddleman(Middleman):
             return {"selected": value}
 
         return None
+
 
