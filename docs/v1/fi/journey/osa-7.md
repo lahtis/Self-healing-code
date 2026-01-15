@@ -1,6 +1,6 @@
 # Osa 7 – SHL:n periaatteet tiivistettynä
 
-SHL frameEwork on kasvanut vuosien aikana skripteistä, kokeiluista ja arkkitehtuurisista oivalluksista.  
+SHL frameEwork on kasvanut nopeasti viikkojen aikana, mutta sen siemenet kylvettiin jo vuosia sitten skripteihin, kokeiluihin ja arkkitehtuurisiin oivalluksiin.  
 Tämä osa kokoaa yhteen sen ytimen: ne periaatteet, jotka ohjaavat SHL:n suunnittelua, toteutusta ja tulevaisuutta.
 
 ## 1. Semantiikka ennen käyttöliittymää
