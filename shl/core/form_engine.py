@@ -1,3 +1,15 @@
+"""
+File: form_engine.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+SHL’s form orchestrator: builds UI components, populates them with data, 
+and collects user input in a framework‑agnostic way.
+
+SHL:n lomakeorkesteri: rakentaa UI‑komponentit, 
+täyttää ne datalla ja kerää käyttäjän syötteet framework‑agnostisesti.
+"""
 class FormEngine:
     """
     FormEngine orchestrates:
@@ -105,3 +117,4 @@ class FormEngine:
             widget = self.widgets.get(comp.component_id)
             if widget:
                 self.adapter.refresh_widget(widget, comp)
+
