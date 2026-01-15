@@ -1,3 +1,15 @@
+"""
+File: healer_memory.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Memory layer for SHL: tracks text, type, and context success/failure counts, maintains selector history,
+computes method‑level confidence, and persists memory to JSON with automatic archival of previous versions.
+
+SHL:n muistikerros: seuraa tekstin, tyypin ja kontekstin onnistumis‑ ja epäonnistumismääriä, ylläpitää selector‑historiaa,
+laskee menetelmäkohtaisen luottamuksen ja tallentaa muistin pysyvästi JSON‑muotoon arkistoiden aiemmat versiot.
+"""
 import json
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
@@ -64,3 +76,4 @@ class HealerMemory:
             data = json.load(f)
 
         return cls(**data)
+
