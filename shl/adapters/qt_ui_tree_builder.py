@@ -1,3 +1,12 @@
+"""
+File: qt_ui_tree_builder.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Builds an SHL‑compatible UI tree from a Qt widget hierarchy and constructs the UINode structure from Qt components.
+Rakentaa Qt‑widget‑hierarkiasta SHL‑yhteensopivan UI‑puun ja muodostaa UINode‑rakenteen Qt‑komponenteista.
+"""
 from shl.ui_tree.ui_node import UINode
 from shl.ui_tree.ui_tree_builder import UITreeBuilder
 
@@ -21,3 +30,4 @@ class QtUITreeBuilder(UITreeBuilder):
                 node.add_child(self._build_node(child))
 
         return node
+
