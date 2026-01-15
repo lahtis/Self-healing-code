@@ -1,3 +1,14 @@
+"""
+File: healer_engine.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+SHL’s healing engine: locates UI elements by text and type, uses memory, and produces logs for the healing process.
+
+SHL:n healing‑moottori: etsii UI‑elementtejä tekstin ja tyypin perusteella,
+hyödyntää muistia ja tuottaa healing‑prosessin lokitiedot.
+"""
 from shl.healer.healer_logger import HealerLogger
 from shl.healer.healer_log import HealerLogEntry
 from shl.healer.healer_memory import HealerMemory
@@ -136,3 +147,4 @@ class HealerEngine:
 
     def save_memory(self):
         self.memory.save(self.memory_path)
+
