@@ -1,3 +1,12 @@
+"""
+File: flet_ui_tree_builder.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Builds a Flet‑based UI tree from SHL components and constructs the widget hierarchy inside the adapter.
+Rakentaa SHL‑komponenttien pohjalta Flet‑pohjaisen UI‑puun ja huolehtii widget‑hierarkian muodostamisesta adapterin sisällä.
+"""
 from shl.ui_tree.ui_node import UINode
 from shl.ui_tree.ui_tree_builder import UITreeBuilder
 
@@ -23,3 +32,4 @@ class FletUITreeBuilder(UITreeBuilder):
             node.add_child(self._build_node(child))
 
         return node
+
