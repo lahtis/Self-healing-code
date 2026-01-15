@@ -1,3 +1,17 @@
+"""
+File: healer_memory_old.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Early SHL prototype where UI tree construction was still part of the healer layer. 
+Implements conversion of a Qt widget hierarchy into UINode structures
+before this logic was moved into the dedicated qt_ui_tree_builder module. Preserved for historical reference.
+
+Varhainen SHL‑prototyyppi, jossa UI‑puun rakentaminen oli vielä osa healer‑kerrosta. 
+Toteuttaa Qt‑widget‑hierarkian muunnoksen UINode‑rakenteeksi ennen kuin tämä logiikka siirrettiin 
+omaan qt_ui_tree_builder‑moduuliinsa. Säilytetään historiallisista syistä
+"""
 from shl.ui_tree.ui_node import UINode
 from shl.ui_tree.ui_tree_builder import UITreeBuilder
 
@@ -21,3 +35,4 @@ class QtUITreeBuilder(UITreeBuilder):
                 node.add_child(self._build_node(child))
 
         return node
+
