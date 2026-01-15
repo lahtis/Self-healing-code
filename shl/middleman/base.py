@@ -1,3 +1,17 @@
+"""
+File: base.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+Abstract interface for the middleman layer: defines how raw data is transformed
+into SHL component‑friendly values and converted back into Python structures. 
+Serves as the foundation for all middleman implementations.
+
+Middleman‑kerroksen abstrakti rajapinta: määrittelee, miten raakadata muunnetaan
+SHL‑komponenttien ymmärtämäksi arvoksi ja takaisin Python‑rakenteiksi. 
+Toimii kaikkien middleman‑toteutusten perustana.
+"""
 from abc import ABC, abstractmethod
 
 class Middleman(ABC):
@@ -32,3 +46,4 @@ class Middleman(ABC):
         Useful for forms, saving, validation, etc.
         """
         pass
+
