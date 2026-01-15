@@ -8,7 +8,7 @@ SHL’s language engine: loads and saves localization files,
 returns texts, and auto‑creates missing keys through self‑healing.
 
 SHL:n kielimoottori: lataa ja tallentaa lokalisointitiedostot, 
-palauttaa tekstit ja luo puuttuvat avaimet automaattisesti.”
+palauttaa tekstit ja luo puuttuvat avaimet automaattisesti.
 """
 import json
 import os
@@ -81,4 +81,5 @@ class LanguageManager:
 
     def __repr__(self):
         return f"<LanguageManager lang='{self.lang_code}'>"
+
 
