@@ -1,3 +1,15 @@
+"""
+File: ui_tree_printer.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+UI tree printing utility: provides methods for pretty‑printing a UINode‑based UI tree with indentation. Used for debugging, 
+snapshot inspection, and understanding UI structure across middleman and healer layers
+
+UI‑puun tulostustyökalu: tarjoaa metodit UINode‑pohjaisen käyttöliittymäpuun kauniiseen, sisennettyyn tulostamiseen. 
+Käytetään debuggaamiseen, snapshot‑tarkasteluun ja UI‑puun rakenteen hahmottamiseen middleman‑ ja healer‑kerroksissa.
+"""
 from shl.ui_tree.ui_node import UINode
 
 
@@ -27,3 +39,4 @@ class UITreePrinter:
 
         for child in node.children:
             self._print_node(child, indent + 1)
+
