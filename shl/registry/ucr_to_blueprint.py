@@ -1,3 +1,17 @@
+"""
+File: ucr_to_blueprint.py
+Author: Tuomas Lähteenmäki
+Version: 0.1
+License: MIT
+Description: 
+UCR reverse‑conversion module: transforms the strict, SHL‑internal UCR format back into a human‑friendly 
+UI blueprint. Strips Healer‑specific data, restores component types, text_keys, framework_map definitions, 
+and maps healer_key and user_key back into blueprint form.
+
+UCR‑rekisterin purkumoduuli: muuntaa tiukan, SHL‑sisäisen UCR‑formaatin takaisin ihmisläheiseksi UI‑blueprintiksi. 
+Poistaa Healer‑spesifiset tiedot, palauttaa komponenttien tyypit, text_keys‑arvot, framework_map‑määritykset ja siirtää 
+healer_key‑ ja user_key‑kentät takaisin blueprint‑muotoon.
+"""
 import json
 from pathlib import Path
 
@@ -50,3 +64,4 @@ def ucr_to_blueprint(ucr_path: str | Path, output_path: str | Path):
         json.dump(blueprint, f, indent=2, ensure_ascii=False)
 
     return output_path
+
