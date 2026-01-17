@@ -1,6 +1,6 @@
-# SHL — Core Concepts
+# SHC — Core Concepts
 
-## What SHL is (and is not)
+## What SHC is (and is not)
 
 ### SHL is
 - **Self‑healing localization layer**  
@@ -14,7 +14,7 @@
 - **A bridge between UI structure and localization**  
   It connects blueprint, UCR, UI tree and adapters.
 
-### SHL is NOT
+### SHC is NOT
 - ❌ a translation engine  
 - ❌ a language model  
 - ❌ a heuristic guesser  
@@ -105,7 +105,7 @@ Score is **relative**, not absolute.
 
 ## Experimental status
 
-SHL is currently:
+SHC is currently:
 - **experimental**
 - **actively evolving**
 - **not production‑ready**
@@ -113,3 +113,4 @@ SHL is currently:
 - **a platform for exploring new localization and UI‑healing concepts**
 
 This status helps set expectations for contributors and users.
+
