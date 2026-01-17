@@ -1,6 +1,6 @@
-# SHL (Semantic Healer Layer) - Arkkitehtuurisynteesi 2026
+# SHC (Semantic Healer Core Layer) - Arkkitehtuurisynteesi 2026
 
-SHL on **semanttinen välikerros**, joka erottaa sovelluksen tarkoituksen (Intent) sen teknisestä toteutuksesta (Implementation). Se mahdollistaa käyttöliittymien automaattisen korjautumisen (Self-Healing) ja täydellisen framework-agnostisuuden.
+SHC on **semanttinen välikerros**, joka erottaa sovelluksen tarkoituksen (Intent) sen teknisestä toteutuksesta (Implementation). Se mahdollistaa käyttöliittymien automaattisen korjautumisen (Self-Healing) ja täydellisen framework-agnostisuuden.
 
 ## 🏗️ 1. Kerrosarkkitehtuuri
 
